@@ -1,0 +1,25 @@
+<% if editor? && slate? %>
+  <div id="<%= article.dom_id %>">
+    <div class="b-area">
+      <div class="b-toolbar">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td>
+              <%= link_to 'Blogs', space_blogs_path(@space) %>
+              <%= link_to glyph('add'), new_space_blog_article_url(@space, @blog) %>
+            </td>
+            <td align="right">
+              <%= link_to glyph('pencil'), edit_space_blog_article_url(@space, @blog, article.draft_version) %>
+              <%= link_to glyph('delete'), space_blog_article_url(@space, @blog, article.draft_version), :method => :delete, :confirm => 'Are you sure?' %>
+              <%= link_to 'Publish', publish_space_blog_article_url(@space, @blog, article.draft_version) %>
+              <%#= toggle_article_link(article) %>
+              <%#= clear_article_link(article) %>
+              <%#= edit_article_link(article) %>
+            </td>
+          </tr>  
+        </table>
+      </div>
+    </div>    
+  </div>
+<% else %>
+<% end %>

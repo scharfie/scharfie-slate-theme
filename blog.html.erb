@@ -1,0 +1,23 @@
+<% 
+  require 'disqus'
+  Disqus::defaults[:account] = 'scharfie' 
+  Disqus::defaults[:show_powered_by] = false
+%>
+
+<% result = blog_engine %>
+<%= partial :header %>
+
+<div id="articles">
+  <%= result %>
+</div>
+
+<div id="sidebar">
+  <%= content_for :about %>  
+  <%= partial :recent %>
+  <%= partial :archives %>
+  
+  <%#= disqus_recent_comments %>
+</div>
+<%= disqus_comment_counts %>
+
+<%= partial :footer %>
