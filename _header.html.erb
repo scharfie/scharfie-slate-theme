@@ -1,7 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="<%= theme_path %>/stylesheets/core.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-  <title>scharfie | <%= title %></title>
+  <title><%= ['scharfie.com', title].reject(&:blank?).join(' | ') %></title>
   <%= support_files %>
 </head>
 <body>
