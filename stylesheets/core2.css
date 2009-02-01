@@ -1,0 +1,155 @@
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+html, body, #container {
+  min-height: 100%;
+  height: 100%;
+}
+body {
+  font: normal 80% "Lucida Grande", sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 660px;
+  margin: 0 auto;
+}
+
+#header {
+  margin: 40px 0 40px 0;
+/*  margin-left: -25px;*/
+}
+
+#logo {
+  float: left;
+  display: block;
+  font-size: 1.6em;
+}
+
+#logo a {
+  background: #242424;
+  color: #fff;
+  padding: 60px 10px 10px 10px;
+}
+
+#logo a span {
+  color: #999;
+}
+
+#intro {
+  color: #999;
+  margin-top: -40px;
+  float: left;
+  width: 500px;
+  padding: 2px 10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  font-family: "Myriad Pro", sans-serif;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none;
+  border: none;
+}
+
+h2 .date {
+  text-align: right;
+/*  border-right: 1px solid #555;*/
+  position: relative;
+  float: left;
+  margin-left: -110px;
+  padding: 0 10px 0 0;
+  width: 100px;
+  color: #999;
+  font-size: 0.7em;
+/*  text-align: right;*/
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+a:hover {
+  background: #eee;
+}
+
+h2 {
+  font-family: ;
+  font-size: 2.4em;
+  margin-bottom: 0.2em;
+}
+
+.stamp {
+  color: #555;
+}
+
+.article {
+/*  width: 650px;*/
+}
+
+.article .body {
+  font-size: 1.1em;
+}
+
+.article .footer  a {
+  color: #555;
+}
+
+#footer {
+  display: none;
+}
+
+#sidebar {
+  margin: 25px  0;
+}
+
+#sidebar .wrap {
+}
+
+#sidebar h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.module {
+  width: 200px;
+  width: 300px;
+  float: left;
+/*  border-left: 1px dotted #999;*/
+  padding: 0 10px 0 9px;
+}
+
+.module:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.module h2 + p {
+  margin-top: 0;
+}
+
+.module ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

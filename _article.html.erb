@@ -1,7 +1,7 @@
 <div class="article">
   <%= article_tools(article) %>
   <div class="header">
-    <h2><%= article_link article %></h2>
+    <h2><span class="date"><%= article_date(article, ':day :amonth') %></span><%= article_link article %></h2>
     <span class="stamp"><%= article_date article %></span>
   </div>
   <div class="body">
