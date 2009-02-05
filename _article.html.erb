@@ -18,6 +18,7 @@
     <% title article.name %>
     <script type="text/javascript" charset="utf-8">
       var disqus_title = "<%= article.name %>"
+      var disqus_url   = "<%= 'http://scharfie.com' / periodical_path(article) %>"
     </script>
     <div class="comments">
       <%= disqus_thread %>

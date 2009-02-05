@@ -15,16 +15,8 @@
 
 <div id="sidebar">
   <div class="wrap clearfix">
-<%
-=begin
-%>    
-    <div class="module"><%= content_for :about %></div>  
-<%
-=end
-%>
     <div class="module"><%= partial :recent %></div>
     <div class="module"><%= partial :archives %></div>
-    <%#= disqus_recent_comments %>
   </div>
 </div>
 <%= disqus_comment_counts %>
