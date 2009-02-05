@@ -83,6 +83,16 @@ h2 .date {
 /*  text-align: right;*/
 }
 
+h3 {
+  font: bold 1.2em "Lucida Grande", Arial;
+}
+
+code {
+  font-size: 1.2em;
+  padding: 2px;
+  background: #f4f4f4;
+}
+
 a {
   color: #222;
   text-decoration: none;
